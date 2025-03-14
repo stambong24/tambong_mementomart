@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(../../css/FogtwoNo5.ttf);
+}
+
+body{
+    background-color: #ded7d1;
+}
+
+#item-frame{
+    border:#c74548 1px solid;
+}
+
+#return{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: #c74548 1px solid;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    scale: 80%;
+
+    opacity: 50%;
+
+    transition: 0.5s;
+}
+
+#return:hover{
+    opacity: 100%;
+}
+
+#sachima{
+    width: 600px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    scale: 80%;
+
+    animation-name: bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#red-circle{
+    width: 520px;
+    height:230px;
+    top: 500px;
+    left: 90px;
+    position: absolute;
+}
+
+/* TEXT ON THE RIGHT */
+
+#snack-name{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 60px;
+
+    position: absolute;
+    left: 900px;
+    top: 190px;
+    letter-spacing: 7px;
+   
+}
+
+#line1{
+    border: #c74548 0.5px solid;
+    width: 430px;
+
+    position: absolute;
+    top: 320px;
+    left: 820px;
+}
+
+#body-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    color: #c74548;
+    font-size: 14px;
+    line-height: 20px;
+
+    width: 430px;
+    text-align: justify;
+
+    position: absolute;
+    top: 350px;
+    left: 820px;
+
+}
+
+#logo{
+    text-decoration: none;
+    color: #c74548;
+    font-family: 'fogtwo';
+    font-size: 10px;
+    letter-spacing: 13px;
+
+    border:#c74548 1px solid;
+    padding: 30px;
+    border-radius: 100%;
+    width: fit-content;
+    height: 50px;
+
+    position: absolute;
+
+    scale: 50%;
+    left: 850px;
+    top: 90px;
+}
+
+/* TEXT ON THE RIGHT */
+
+/* BUTTONS */
+
+#history{
+    text-decoration: none;
+    font-family: 'fogtwo';
+    color: #c74548;
+    border:#c74548 3px solid;
+    border-radius: 50px;
+    font-size: 26px;
+    letter-spacing: 20px;
+    width: 400px;
+    padding-left: 100px;
+
+    position: absolute;
+
+
+    opacity: 25%;
+    transition: 0.7s;
+
+    scale: 30%;
+    top: 537px;
+    left: 660px;
+}
+
+#history:hover{
+    opacity:100%;
+    scale: 40%;
+}
+
+
+#recipes{
+    text-decoration: none;
+    font-family: 'fogtwo';
+    color: #c74548;
+    border:#c74548 3px solid;
+    border-radius: 50px;
+    font-size: 26px;
+    letter-spacing: 20px;
+    width: 400px;
+    padding-left: 100px;
+
+    position: absolute;
+
+
+    opacity: 25%;
+    transition: 0.7s;
+
+    scale: 30%;
+    top: 535px;
+    left: 890px;
+}
+
+#recipes:hover{
+    opacity:100%;
+    scale: 40%;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes bobbing{
+
+    0%{top:60px}
+    50%{top:-10px}
+    100%{top:60px}
+
+}

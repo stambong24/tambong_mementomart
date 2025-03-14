@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(../../css/FogtwoNo5.ttf);
+}
+
+#return{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: #c74548 1px solid;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    scale: 80%;
+
+    opacity: 50%;
+
+    transition: 0.5s;
+
+    z-index: 2;
+}
+
+#return:hover{
+    opacity: 100%;
+}
+
+
+body{
+    background-color: #ded7d1;
+}
+
+#left-arrow{
+    position: absolute;
+    width: 60px;
+    top: 45%;
+    left: 30px;
+    opacity: 50%;
+
+    transition: 0.5s;
+}
+
+#left-arrow:hover{
+    opacity: 100%;
+    scale: 120%;
+
+    cursor: pointer;
+}
+
+#right-arrow{
+    position: absolute;
+    width: 60px;
+    top: 45%;
+    left: 1340px;
+    opacity: 50%;
+
+    transition: 0.5s;
+
+}
+
+#right-arrow:hover{
+    opacity: 100%;
+    scale: 120%;
+
+    cursor: pointer;
+}
+
+
+
+#slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    display: none;
+
+    scale: 90%;
+}
+
+.slide.active{
+    display: block;
+}
+
+/*SLIDE 1*/
+
+#history-1{
+    position: absolute;
+    width: 1500px;
+    top: -140px;
+    left:-240px;
+}
+
+#slide-1{
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    left: 16%;
+    top: 120px;
+
+
+}
+
+#body-1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c74548;
+    font-size: 14px;
+
+    width: 600px;
+    line-height: 24px;
+
+    position: absolute;
+    left: 41%;
+    top: 280px;
+    text-align: left;
+
+
+}
+
+#header-1{
+    font-family: 'fogtwo';
+    font-weight: lighter;
+    letter-spacing: 10px;
+    color: #c74548;
+
+    font-size: 180px;
+    position: absolute;
+    left: 40%;
+    top: -40px;
+}
+
+#pocky-name{
+    font-family: 'fogtwo';
+    font-weight: lighter;
+    letter-spacing: 20px;
+    color: #c74548;
+
+    font-size: 20px;
+    position: absolute;
+    left: 45%;
+    top: 16px;
+}
+
+#pocky-3{
+    width: 1000px;
+    position: absolute;
+    top: -100px;
+    left: -400px;
+    rotate: -35deg;
+}
+
+/*SLIDE 2*/
+
+#history-2{
+    position: absolute;
+    width: 1400px;
+
+}
+
+#pocky-5{
+    width: 1000px;
+    position: absolute;
+    top: -20px;
+    left: -280px;
+
+    rotate:-18deg;
+
+}
+
+#body-2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c74548;
+    font-size: 14px;
+
+    width: 580px;
+    line-height: 24px;
+
+    position: absolute;
+    left: 790px;
+    top: 390px;
+    text-align: left;
+
+
+}
+
+/*SLIDE 3*/
+
+
+#pocky_bubble{
+    width: 1600px;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+
+}
+
+
+#pocky-2{
+    width: 950px;
+    position: absolute;
+    top: 20px;
+    left: 560px;
+
+    rotate: -10deg;
+}
+
+
+#body-3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c74548;
+    font-size: 14px;
+
+    width: 530px;
+    line-height: 24px;
+
+    position: absolute;
+    left: 90px;
+    top: 490px;
+    text-align: left;
+
+
+}
