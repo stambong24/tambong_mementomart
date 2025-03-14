@@ -1,0 +1,764 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(FogtwoNo5.ttf);
+}
+
+body{
+    background-color: #ded7d1;
+ 
+}
+
+#return{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: #c74548 1px solid;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    scale: 80%;
+
+    opacity: 50%;
+
+    transition: 0.5s;
+}
+
+#return:hover{
+    opacity: 100%;
+}
+
+#container{
+    border: #c74548 1px solid;
+    display: grid;
+    width: fit-content;
+    height: 100%;
+
+    position: absolute;
+    left: -40px;
+
+
+}
+
+
+#item-select{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    width: 900px;
+    height: 1200px;
+    position: absolute;
+    gap: 10px;
+
+    scale: 45%;
+    left: 670px;
+    top: -245px;
+
+
+}
+
+.item{
+    border: 3px solid #c74548;
+    border-radius: 50px;
+}
+
+#rabbit{
+    width: 400px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#rabbit:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#panda{
+    width: 320px;
+    position: relative;
+    left: 55px;
+    top: 36px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#panda:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#pocky{
+    width: 340px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#pocky:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#yakult{
+    width: 400px;
+    position: relative;
+    left: 17px;
+    top: -10px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#yakult:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#ramune{
+    width: 390px;
+    position: relative;
+    left: 10px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#ramune:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#sachima{
+    width: 325px;
+    position: relative;
+    left: 37px;
+    top: 28px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#sachima:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+
+
+/*-----PRESENTER IMAGES-------*/
+
+
+#presenter{
+    position: absolute;
+    left: -90px;
+    width:900px;
+    height: 920px;
+
+    top: -150px;
+    scale: 45%;
+
+
+
+}
+
+#instructions{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+#rabbit-present{
+    width: 1300px;
+    position: absolute;
+    top: -130px;
+    left: -155px;
+    rotate: 10deg;
+
+    animation-name: short-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#panda-present{
+    width: 870px;
+    position: absolute;
+    top:-50px;
+    left: -10px;
+    
+    animation-name: tall-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#pocky-present{
+    width: 870px;
+    position: absolute;
+    top:-50px;
+    left: -5px;
+
+    animation-name: tall-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#yakult-present{
+    width: 1000px;
+    position: absolute;
+    top: -100px;
+    left: -60px;
+
+    animation-name: taller-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#ramune-present{
+    width: 1000px;
+    position: absolute;
+    top: -110px;
+    left: -90px;
+    rotate: -20deg;
+
+    animation-name: taller-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#sachima-present{
+    width: 870px;
+    position: absolute;
+    top:-50px;
+    left: -60px;
+
+    animation-name: tall-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#red-circle{
+    width: 900px;
+    height: 500px;
+
+    position: absolute;
+    top: 600px;
+
+}
+
+
+#basket{
+    width: 700px;
+    position: absolute;
+    left: 90px;
+
+    animation-name: shorter-bobbing;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+}
+
+#basket-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-270px;
+
+}
+
+
+#basket-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 70px;
+
+    scale: 45%;
+
+    
+}
+
+#basket-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+
+    
+
+}
+
+#basket-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#rabbit-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#rabbit-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-235px;
+
+}
+
+
+#rabbit-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 10px;
+
+    scale: 45%;
+
+    
+}
+
+#rabbit-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+
+}
+
+#panda-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#panda-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-228px;
+
+}
+
+
+#panda-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 10px;
+
+    scale: 45%;
+
+    
+}
+
+#panda-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+}
+
+#pocky-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#pocky-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-185px;
+
+}
+
+
+#pocky-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -65px;
+
+    scale: 45%;
+
+    
+}
+
+#pocky-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+}
+
+#yakult-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#yakult-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-185px;
+
+}
+
+
+#yakult-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -75px;
+
+    scale: 45%;
+    
+}
+
+#yakult-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+}
+
+#ramune-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#ramune-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-193px;
+
+}
+
+
+#ramune-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -50px;
+
+    scale: 45%;
+
+    
+}
+
+#ramune-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+    
+}
+
+#sachima-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#sachima-subhead{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-200px;
+
+}
+
+
+#sachima-price{
+    font-family: 'fogtwo';
+    color: #c74548;
+    font-size: 50px;
+
+    position: absolute;
+    border: #c74548 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -50px;
+
+    scale: 45%;
+
+    
+}
+
+#sachima-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #c74548;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+}
+
+
+@keyframes short-bobbing {
+    0%   {top:-200px;}
+    50%  {top:-140px;}
+    100% {top:-200px; }
+  }
+
+@keyframes shorter-bobbing {
+    0%   {top: 130px;}
+    50%  {top: 60px;}
+    100% {top: 130px; }
+  }
+
+@keyframes tall-bobbing {
+    0%   {top: -50px;}
+    50%  {top: -100px;}
+    100% {top: -50px;}
+  }
+
+  @keyframes taller-bobbing {
+    0%   {top: -100px;}
+    50%  {top: -160px;}
+    100% {top: -100px;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

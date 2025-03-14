@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(FogtwoNo5.ttf);
+}
+
+body{
+    background-color: #ded7d1;
+    width: 100%;
+}
+
+
+#return{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: #36316c 1px solid;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    scale: 80%;
+
+    opacity: 50%;
+
+    transition: 0.5s;
+}
+
+#return:hover{
+    opacity: 100%;
+}
+
+#loading-screen{
+    background-color: #ded7d1;
+    width: 100%;
+    height: 100%;
+}
+
+#doodle{
+    position: absolute;
+    width: 1100px;
+    left: 120px;
+    top: 80px;
+    rotate: -10deg;
+}
+
+#about-page{
+    background-color: #ded7d1;
+    width: 100%;
+    height: 100%;
+}
+
+
+#cart{
+    width: 250px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    opacity: 100%;
+
+    animation-name: cart-scroll;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes cart-scroll{
+    0%{left: 50px;}
+    100% {left: 1300px;}
+
+}
+
+@keyframes bounce{
+    0%{margin-top: 0px;}
+    50% {margin-top: -10px;}
+    100% {margin-top: 0px;}
+
+}
+
+#shelf{
+    position: absolute;
+    width: 850px;
+    top: 50px;
+    left: 35px;
+}
+
+#about-me{
+    font-family: 'fogtwo';
+    font-weight:lighter;
+    color: #36316c;
+    position: absolute;
+    letter-spacing: 15px;
+    left: 800px;
+    top: 300px;
+    font-size: 30px;
+}
+
+#about-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 13px;
+    line-height: 22px;
+    color: #36316c;
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    left: 795px;
+    top: 430px;
+}
+
+#buldak{
+    position: absolute;
+    width: 100px;
+    top: 390px;
+    left: 235px;
+    transition: 0.4s;
+
+}
+
+#buldak:hover{
+    margin-top: -20px;
+}
+
+#rice{
+    position: absolute;
+    width: 95px;
+    top: 384px;
+    left: 330px;
+    transition: 0.4s;
+
+}
+
+#rice:hover{
+    margin-top: -20px;
+}
+
+#pancit{
+    position: absolute;
+    width: 95px;
+    top: 384px;
+    left: 410px;
+    transition: 0.4s;
+
+}
+
+#pancit:hover{
+    margin-top: -20px;
+}
+
+#honey{
+    position: absolute;
+    width: 95px;
+    top: 384px;
+    left: 500px;
+    transition: 0.4s;
+
+}
+
+#honey:hover{
+    margin-top: -20px;
+}
+
+#spam{
+    position: absolute;
+    width: 90px;
+    top: 265px;
+    left: 227px;
+    transition: 0.4s;
+
+}
+
+#spam:hover{
+    margin-top: -20px;
+}
+
+#buldak-4{
+    position: absolute;
+    width: 90px;
+    top: 260px;
+    left: 300px;
+    transition: 0.4s;
+
+}
+
+#buldak-4:hover{
+    margin-top: -20px;
+}
+
+#shrimp-2{
+    position: absolute;
+    width: 90px;
+    top: 260px;
+    left: 360px;
+    transition: 0.4s;
+
+}
+
+#shrimp-2:hover{
+    margin-top: -20px;
+}
+
+#shrimp-4{
+    position: absolute;
+    width: 90px;
+    top: 260px;
+    left: 440px;
+    transition: 0.4s;
+
+}
+
+#shrimp-4:hover{
+    margin-top: -20px;
+}
+
+#pancit-5{
+    position: absolute;
+    width: 83px;
+    top: 260px;
+    left: 523px;
+    rotate: -40deg;
+    transition: 0.4s;
+
+}
+
+#pancit-5:hover{
+    margin-top: -20px;
+}
+
+#buldak-7{
+    position: absolute;
+    width: 90px;
+    top: 150px;
+    left: 225px;
+    transition: 0.4s;
+
+}
+
+#buldak-7:hover{
+    margin-top: -20px;
+}
+
+#rice-6{
+    position: absolute;
+    width: 90px;
+    top: 150px;
+    left: 320px;
+    transition: 0.4s;
+
+}
+
+#rice-6:hover{
+    margin-top: -20px;
+}
+
+#honey-7{
+    position: absolute;
+    width: 90px;
+    top: 150px;
+    left: 400px;
+    transition: 0.4s;
+
+}
+
+#honey-7:hover{
+    margin-top: -20px;
+}
+
+#rice-4{
+    position: absolute;
+    width: 90px;
+    top: 150px;
+    left: 480px;
+    transition: 0.4s;
+
+}
+
+#rice-4:hover{
+    margin-top: -20px;
+}
+
+
+
+
+
+
+
+

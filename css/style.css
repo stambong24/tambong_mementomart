@@ -1,0 +1,651 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(FogtwoNo5.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: #c74548;
+
+}
+
+body{
+    background-color: #ded7d1;
+
+  
+}
+
+/*SPLASH SCREEN*/
+
+#splash-screen{
+    position: absolute;
+    background-color: #ded7d1;
+    width: 1400px;
+    height: 100%;
+}
+
+#splash-screen:hover{
+    cursor: pointer;
+}
+
+#memento{
+    color: #c74548; 
+    font-size: 100px;
+    font-family: 'fogtwo';
+    font-weight: lighter;
+    letter-spacing: 5px;;
+    position: absolute;
+    top: 220px;
+    left: 500px;
+
+    animation-name:  text-scale-in;
+    animation-duration: 2s;
+}
+
+#welcome-to{
+    color: #c74548; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    font-size: 35px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+
+    animation-name: text-fade-in-track;
+    animation-duration: 4s;
+}
+
+#splash-screen-frame{
+    position: relative;
+    left: 5%;
+    top: 20px;
+}
+
+#splash-line{
+    width: 670px;
+    position: absolute;
+    border: #c74548 0.5px solid;
+    left: 35.7%;
+    top: 400px;
+
+    animation-name: line-animation;
+    animation-duration: 2s;
+}
+
+#click-anywhere{
+    width: 1000px;
+    position: absolute;
+    color: #c74548;
+    font-family: 'fogtwo';
+    font-weight: lighter;
+    letter-spacing: 20px;
+    font-size: 10px;
+    left: 22%;
+    top: 570px;
+
+
+    animation-name: text-fade-in;
+    animation-duration: 10s;
+
+}
+
+.active{
+    animation-name: scale-up;
+    animation-duration: 5s;
+}
+
+@keyframes scale-up {
+    0% {scale:100%;}
+    100% {scale:270%;}
+}
+
+@keyframes text-fade-in{
+    0% {opacity:0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes text-fade-in-track{
+    0% {opacity:0%; letter-spacing: 5px;}
+    100% {opacity: 100%; letter-spacing: 20px;}
+}
+
+@keyframes text-scale-in{
+    0% {opacity:0%; scale: 80%;}
+    100% {opacity: 100%; scale: 100%;}
+}
+
+
+
+
+/* CONVEYER BELT IMAGES AND STUFF */
+
+#red-doodle{
+    z-index: -2;
+    position: absolute;
+    width: 1400px;
+    left: 30px;
+}
+
+#small-text{
+    font-family: 'fogtwo';
+    font-weight: lighter;
+    color: #c74548;
+    position: absolute;
+    top: 210px;
+    left: 850px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    width: 300px;
+}
+
+#cashier{
+   width: 1400px;
+   height: 960px;
+
+   position: absolute;
+   top: 50px;
+   left: 30px;
+
+   animation-name: text-fade-in;
+   animation-duration: 10s;
+  
+}
+
+#receipt{
+    width: 1200px;
+    height: 940px;
+    position: absolute;
+    left: 90px;
+    top: -10px;
+    rotate: 3deg;
+}
+
+.active-2{
+animation-name: receipt;
+animation-duration:4s;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes receipt {
+    0% {top:-500px; left: -200px; rotate: -10deg; scale: 5%;}
+    45% {top:-200px; left: 200px; rotate: 10deg; scale: 40%;}
+    75% {top:-50px; left: -100px; rotate: -5deg; scale: 90%;}
+    85% {top: -20px; left: 110px; scale: 105%;}
+    100% {top: -10px; left: 90px; scale: 100%;}
+
+}
+
+@keyframes button-fade-in {
+    0% {opacity:0%;}
+    95% {opacity:0%;}
+    100% {opacity: 25%;}
+
+}
+
+@keyframes line-animation{
+    0% {width:0px;}
+    100% {width:670px;}
+}
+
+.button-fade{
+    animation-name: button-fade-in;
+    animation-duration:4s;
+}
+
+
+#about-button{
+    border: 1px solid #c74548;
+    border-radius: 20px;
+    position: absolute;
+    top: 380px;
+    left: 600px;
+    width: fit-content;
+    height: 50px;
+    width: 220px;
+
+    scale: 90%;
+    rotate: -38deg;
+
+    opacity: 25%;
+
+    transition: 1s;
+
+}
+
+#about-button:hover{
+    opacity: 100%;
+    scale: 110%;
+}
+
+#about-text{
+    font-family: 'fogtwo';
+    color: #c74548;
+    position: absolute;
+    top: -13px;
+    left: 57px;
+    letter-spacing: 6px;
+}
+
+#browse-button{
+    border-radius: 20px;
+    position: absolute;
+    top: 330px;
+    left: 540px;
+    width: fit-content;
+    height: 50px;
+    width: 200px;
+    padding: 2px;
+
+    border:#c74548 1px solid;
+
+    rotate: -36deg;
+
+    opacity: 25%;
+    transition: 1s;
+
+
+}
+
+#browse-button:hover{
+    opacity: 100%;
+    scale: 120%;
+}
+
+#browse-text{
+    font-family: 'fogtwo';
+    color: #c74548;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    letter-spacing: 2px;
+    font-size: 23px;
+
+    transition: 0.5s;
+}
+
+
+/*CONVEYER BELT*/
+
+#conveyer-belt{
+    width: 1000px;
+    height: 200px;
+
+    position: absolute;
+    top: 425px;
+    left: 200px;
+
+    overflow: hidden;
+
+    animation-name: text-fade-in;
+    animation-duration: 10s;
+
+
+
+
+}
+
+#panda{
+    width: 120px;
+
+    position: absolute;
+    top: 50px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+#yakult{
+    width: 120px;
+
+    position: absolute;
+    top: 50px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+}
+
+#rabbit{
+    width: 150px;
+
+    position: absolute;
+    top: 50px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+
+
+#sachima{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+}
+
+#pocky{
+    width: 120px;
+
+    position: relative;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+}
+
+#ramune{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 11s;
+}
+
+
+#buldak{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 13s;
+}
+
+#honey{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 24s;
+}
+
+#pancit{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 17s;
+}
+
+#rice{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 19s;
+}
+
+#shrimp{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 21s;
+}
+
+#spam{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 23s;
+}
+
+
+#panda-2{
+    width: 120px;
+
+    position: absolute;
+    top: 50px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 22s;
+}
+
+#yakult-2{
+    width: 120px;
+
+    position: absolute;
+    top: 50px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 20s;
+}
+
+#rabbit-2{
+    width: 150px;
+
+    position: absolute;
+    top: 30px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 18s;
+}
+
+
+#sachima-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 16s;
+}
+
+#pocky-2{
+    width: 120px;
+
+    position: relative;
+    top: 40px;
+    left: -400px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 14s;
+}
+
+#ramune-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 12s;
+}
+
+
+#buldak-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+}
+
+#honey-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 8s;
+}
+
+#pancit-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6s;
+}
+
+#rice-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+
+}
+
+#shrimp-2{
+    width: 120px;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+
+    transition: 0.5s;
+
+
+    animation-name: scroll;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+
+
+
+@keyframes scroll {
+    0% {left:-200;}
+    100% {left:2500px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

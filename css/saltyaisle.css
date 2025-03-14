@@ -1,0 +1,779 @@
+@font-face {
+    font-family: 'fogtwo';
+    src: url(FogtwoNo5.ttf);
+}
+
+body{
+    background-color: #ded7d1;
+    width: 100%;
+
+}
+
+#return{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 20px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: #36316c 1px solid;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    scale: 80%;
+
+    opacity: 50%;
+
+    transition: 0.5s;
+}
+
+#container{
+    border: #36316c 1px solid;
+    display: grid;
+    width: fit-content;
+    height: 100%;
+
+    position: absolute;
+    left: -40px;
+
+
+}
+
+
+#item-select{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    width: 900px;
+    height: 1200px;
+    position: absolute;
+    gap: 10px;
+
+    scale: 45%;
+    left: 670px;
+    top: -245px;
+
+
+}
+
+.item{
+    border: 3px solid #36316c;
+    border-radius: 50px;
+}
+
+#buldak{
+    width: 400px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#buldak:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#honey{
+    width: 320px;
+    position: relative;
+    left: 55px;
+    top: 36px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#honey:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#pancit{
+    width: 340px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#pancit:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#rice{
+    width: 350px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#rice:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#shrimp{
+    width: 390px;
+    position: relative;
+    left: 10px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#shrimp:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+#spam{
+    width: 325px;
+    position: relative;
+    left: 50px;
+    top: 28px;
+    opacity: 50%;
+    transition: 0.7s;
+}
+
+#spam:hover{
+    scale: 104%;
+    opacity: 100%;
+    margin-top: -20px;
+}
+
+
+
+/*-----PRESENTER IMAGES-------*/
+
+
+#presenter{
+    position: absolute;
+    left: -90px;
+    width:900px;
+    height: 920px;
+
+    top: -150px;
+    scale: 45%;
+
+
+
+}
+
+#instructions{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+#buldak-present{
+    width: 940px;
+    position: absolute;
+    top: -130px;
+    left: -15px;
+
+
+    animation-name: shorter-er-er-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#honey-present{
+    width: 870px;
+    position: absolute;
+    top:-50px;
+    left: 0px;
+    
+    animation-name: tall-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#pancit-present{
+    width: 870px;
+    position: absolute;
+    top:-50px;
+    left: 20px;
+
+    animation-name: shorter-er-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#rice-present{
+    width: 850px;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+
+    animation-name: taller-er-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#shrimp-present{
+    width: 850px;
+    position: absolute;
+    top: -110px;
+    left: 20px;
+
+    animation-name: taller-er-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#spam-present{
+    width: 840px;
+    position: absolute;
+    top:-50px;
+    left: 45px;
+
+    animation-name: shorter-er-bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+#blue-circle{
+    width: 900px;
+    height: 500px;
+
+    position: absolute;
+    top: 600px;
+
+}
+
+
+#basket{
+    width: 700px;
+    position: absolute;
+    left: 90px;
+
+    animation-name: shorter-bobbing;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+}
+
+#basket-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-270px;
+
+}
+
+
+#basket-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 70px;
+
+    scale: 45%;
+
+    
+}
+
+#basket-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+
+    
+
+}
+
+#basket-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#buldak-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#buldak-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-188px;
+
+}
+
+
+#buldak-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -60px;
+
+    scale: 45%;
+
+    
+}
+
+#buldak-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+
+}
+
+#honey-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#honey-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-290px;
+
+}
+
+
+#honey-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 105px;
+
+    scale: 45%;
+
+    
+}
+
+#honey-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -610px;
+    left: -463px;
+    
+}
+
+#pancit-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#pancit-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-185px;
+
+}
+
+
+#pancit-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -65px;
+
+    scale: 45%;
+
+    
+}
+
+#pancit-description{
+    width: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -610px;
+    left: -490px;
+    
+}
+
+#rice-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#rice-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-240px;
+
+}
+
+
+#rice-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 23px;
+
+    scale: 45%;
+    
+}
+
+#rice-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -620px;
+    left: -463px;
+    
+}
+
+#shrimp-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#shrimp-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-238px;
+
+}
+
+
+#shrimp-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: 20px;
+
+    scale: 45%;
+
+    
+}
+
+#shrimp-description{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -630px;
+    left: -463px;
+    
+    
+}
+
+#spam-desc-frame{
+    position: absolute;
+    left: 290px;
+    top: 1150px;
+    width: 1550px;
+    height: fit-content;
+}
+
+#spam-subhead{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 70px;
+    width: fit-content;
+    height:fit-content;
+
+    scale: 45%;
+    position: absolute;
+    top: -680px;
+    left:-175px;
+
+}
+
+
+#spam-price{
+    font-family: 'fogtwo';
+    color: #36316c;
+    font-size: 50px;
+
+    position: absolute;
+    border: #36316c 1px solid;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding: 5px;
+
+    top: -663px;
+    left: -80px;
+
+    scale: 45%;
+
+    
+}
+
+#spam-description{
+    width: 1300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;;
+    color: #36316c;
+    text-align:justify;
+
+    position: absolute;
+
+    scale: 45%;
+    top: -610px;
+    left: -490px;
+    
+}
+
+
+@keyframes short-bobbing {
+    0%   {top:-200px;}
+    50%  {top:-140px;}
+    100% {top:-200px; }
+  }
+
+@keyframes shorter-bobbing {
+    0%   {top: 130px;}
+    50%  {top: 60px;}
+    100% {top: 130px; }
+  }
+
+@keyframes shorter-er-bobbing {
+    0%   {top: 40px;}
+    50%  {top: -40px;}
+    100% {top: 40px; }
+  }
+
+  @keyframes shorter-er-er-bobbing {
+    0%   {top: -20px;}
+    50%  {top: -120px;}
+    100% {top: -20px; }
+  }
+
+
+@keyframes tall-bobbing {
+    0%   {top: -50px;}
+    50%  {top: -100px;}
+    100% {top: -50px;}
+  }
+
+  @keyframes taller-bobbing {
+    0%   {top: -100px;}
+    50%  {top: -160px;}
+    100% {top: -100px;}
+  }
+
+  @keyframes taller-er-bobbing {
+    0%   {top: -40px;}
+    50%  {top: -120px;}
+    100% {top: -40px;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
